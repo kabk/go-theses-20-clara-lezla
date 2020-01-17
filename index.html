@@ -198,7 +198,7 @@ of a Genre,  2012. P2.<br><br>
 	<!-- Sliding Menu (Image Gallery) -->
 	  <div id="slideMenu" class="sliding-panel">
 	  	<!-- Menu Text -->
-	  	<p id="slideText" class="image_text">Simmer it</p>
+	  	<div id="slideText"><p>Simmer it</p></div>
 	  	<!-- Images -->
 	  	<div class="slideImage">
 			<img src="images/1.jpg">
@@ -226,11 +226,11 @@ of a Genre,  2012. P2.<br><br>
 		    $(".sliding-panel").click(function(){
 		  if ( $(this).hasClass("isOpen") ) {
 		    $(this).animate({
-		      height: '80%'
+		      height: '90%'
 		    });
 		  } else {
 		    $(this).animate({
-		      height: '30px'
+		      height: '40px'
 		    });
 		  }
 		  $(this).toggleClass("isOpen");
