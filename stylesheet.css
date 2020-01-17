@@ -297,7 +297,7 @@ br::-moz-selection {
 /* Text for underneath Images */
 
 .image_text {
-	font-family: 'DerrinReg';
+	font-family: 'ArialRoundedBold';
     font-style: normal;
   	text-align: center;
     font-size: 16px;
@@ -365,7 +365,7 @@ br::-moz-selection {
 }
 
 #slideText p{
-	font-family: 'Derringer-Regular';
+	font-family: 'ArialRoundedBold';
 	font-size: 25px;
 	margin-top:5px;
 	margin-bottom: 5px;
@@ -375,8 +375,6 @@ br::-moz-selection {
 .slideImage {
 	position: relative;
 	width: 100%;
-	margin: auto;
-	padding-bottom: 10px;
 }
 
 .slideImage img{
@@ -444,8 +442,14 @@ br::-moz-selection {
 		font-size: 19px;
 	}
 
-	.image_text, .bookmarksource {
+	.image_text {
 	    font-size: 16px;
+			margin-bottom: 2px;
+
+	}
+	bookmarksource {
+	    font-size: 16px;
+
 	}
 
 	/* Text Layout Adjustments */
