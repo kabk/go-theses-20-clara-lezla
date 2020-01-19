@@ -68,8 +68,7 @@ h2 {
 	/* margin-bottom: 50px; */
 	color: black;
 	text-rendering: optimizeLegibility;
-	color: #562704;
-}
+color: #562704;}
 
 /* Text Layout */
 
@@ -239,15 +238,17 @@ br::-moz-selection {
 
 .link {
 	position: relative;
-	left: 5%;
-	width: 80%;
+	/* left: 5%; */
+	width: 100%;
+	line-height: 0.5;
 	margin-top: 150px;
 	margin-bottom: 150px;
-	text-align: left;
+	text-align: center;
 	z-index: 50%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	line-height: 1.2;
+		color: #92A88A;
 
 
 }
@@ -463,27 +464,32 @@ br::-moz-selection {
 		font-size: 50px;
 		margin-bottom: 0px;
 		vertical-align: center;
+		color: #562704;
 	}
 
 	h2 {
 		font-size: 26px;
 		/* margin-bottom: 40px; */
 		line-height: 0,5;
+color: #562704;
 	}
 
 	p {
 	    margin-bottom: 30px;
 	    font-size: 19px;
 	    line-height: 1.2;
+			color: #562704;
 	}
 
 	a {
 		font-size: 20px;
 	    line-height: 1.2;
+			color: #562704;
 	}
 
 	.italic {
 		font-size: 17px;
+		color: #562704;
 	}
 
 	.image_text {
