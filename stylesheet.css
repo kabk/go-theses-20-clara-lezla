@@ -24,6 +24,13 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ArialUnicode';
+    src: url(fonts/ArialUnicode.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Images */
 
 img {
@@ -40,13 +47,14 @@ h1 {
 	font-family: 'ArialRoundedBold', Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     top: 20%;
     letter-spacing: -0.1vw;
-    font-size: 9vw;
+    font-size: 6vw;
     line-height: 1.2;
-    color: black;
+    color: #562704;
     text-rendering: optimizeLegibility;
+		margin-left: -9px;
 }
 
 /* Bookmark Title */
@@ -54,10 +62,10 @@ h1 {
 h2 {
 	text-align: left;
 	font-family: 'ArialRoundedBold', Arial, sans-serif;
-	font-size: 50px;
+	font-size: 28px;
 	font-weight: normal;
-	margin-top: 0px;
-	margin-bottom: 100px;
+	/* margin-top: 0px; */
+	/* margin-bottom: 50px; */
 	color: black;
 	text-rendering: optimizeLegibility;
 }
@@ -65,7 +73,7 @@ h2 {
 /* Text Layout */
 
 p {
-    font-family: 'Derringer-Regular';
+    font-family: 'ArialUnicode';
     font-style: normal;
     font-weight: 500;
     padding: 0;
@@ -81,10 +89,13 @@ p {
 .italic {
     font-family: 'ArialRoundedBold';
     /* font-style: italic; */
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     color: rgb(0, 0, 0);
     text-rendering: optimizeLegibility;
+		color: #562704;
+
+
 }
 
 /* Links Layout */
@@ -226,7 +237,7 @@ br::-moz-selection {
 .link {
 	position: relative;
 	left: 5%;
-	width: 55%;
+	width: 80%;
 	margin-top: 150px;
 	margin-bottom: 150px;
 	text-align: left;
@@ -278,7 +289,7 @@ br::-moz-selection {
 
 .nextChapterLink {
 	grid-area: link;
-	margin: auto;
+	margin: Left;
 }
 
 /* Text Column */
@@ -332,7 +343,7 @@ br::-moz-selection {
 	font-family: 'ArialRoundedBold';
     font-style: normal;
   	text-align: left;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.22;
     color: rgb(0, 0, 0);
     text-rendering: optimizeLegibility;
@@ -343,7 +354,7 @@ br::-moz-selection {
   	padding-top: 30px;
   	font-family: 'ArialRoundedBold', 'ArialRoundedBold', Arial, sans-serif;
     font-style: normal;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.22;
     color: rgb(0, 0, 0);
     text-rendering: optimizeLegibility;
@@ -361,6 +372,26 @@ br::-moz-selection {
 	background-color: #92A88A;
 
 	/* padding-bottom: 10px; */
+
+	@import "@material/image-list/mdc-image-list";
+	src: "images/1";
+
+	.my-masonry-image-list {
+	  @include mdc-image-list-masonry-columns(5);
+	}
+	.my-image-list {
+	  @include mdc-image-list-standard-columns(5);
+	}
+
+	@media (max-width: 599px) {
+	  .my-image-list {
+	    @include mdc-image-list-standard-columns(3);
+	  }
+	}
+
+
+
+
 
 }
 
@@ -423,8 +454,9 @@ br::-moz-selection {
 	}
 
 	h2 {
-		font-size: 30px;
-		margin-bottom: 40px;
+		font-size: 26px;
+		/* margin-bottom: 40px; */
+		line-height: 0,5;
 	}
 
 	p {
@@ -439,16 +471,16 @@ br::-moz-selection {
 	}
 
 	.italic {
-		font-size: 19px;
+		font-size: 17px;
 	}
 
 	.image_text {
-	    font-size: 16px;
+	    font-size: 15px;
 			margin-bottom: 2px;
 
 	}
 	bookmarksource {
-	    font-size: 16px;
+	    font-size: 10px;
 
 	}
 
