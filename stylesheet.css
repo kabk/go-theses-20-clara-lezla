@@ -25,8 +25,8 @@ body {
 }
 
 @font-face {
-    font-family: 'ArialUnicode';
-    src: url(fonts/ArialUnicode.ttf);
+    font-family: 'ArialRoundedRegu';
+    src: url(fonts/ArialRoundedRegu.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -68,12 +68,13 @@ h2 {
 	/* margin-bottom: 50px; */
 	color: black;
 	text-rendering: optimizeLegibility;
+	color: #562704;
 }
 
 /* Text Layout */
 
 p {
-    font-family: 'ArialUnicode';
+    font-family: 'ArialRoundedRegu';
     font-style: normal;
     font-weight: 500;
     padding: 0;
@@ -82,6 +83,7 @@ p {
     line-height: 1.2;
     color: rgb(0, 0, 0);
     text-rendering: optimizeLegibility;
+		color: #562704;
 }
 
 /* Italic Text Layout */
@@ -89,11 +91,12 @@ p {
 .italic {
     font-family: 'ArialRoundedBold';
     /* font-style: italic; */
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.2;
     color: rgb(0, 0, 0);
     text-rendering: optimizeLegibility;
 		color: #562704;
+
 
 
 }
@@ -321,13 +324,16 @@ br::-moz-selection {
 
 #bookmarkDiv {
 	position: relative;
-	left: 22.5%;
-	width: 55%;
+	/* left: 22.5%; */
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-bottom: 100px;
 	text-align: center;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	z-index: 1;
+
 }
 
 /* Bookmark Links */
@@ -345,8 +351,13 @@ br::-moz-selection {
   	text-align: left;
     font-size: 10px;
     line-height: 1.22;
-    color: rgb(0, 0, 0);
     text-rendering: optimizeLegibility;
+		color: #92A88A;
+}
+
+.bookmarks div {
+	width: 100%;
+
 }
 
 .bookmarksource {
@@ -356,8 +367,9 @@ br::-moz-selection {
     font-style: normal;
     font-size: 11px;
     line-height: 1.22;
-    color: rgb(0, 0, 0);
+
     text-rendering: optimizeLegibility;
+		color: #92A88A;
 }
 
 
@@ -477,10 +489,12 @@ br::-moz-selection {
 	.image_text {
 	    font-size: 15px;
 			margin-bottom: 2px;
+			color: #92A88A;
 
 	}
 	bookmarksource {
 	    font-size: 10px;
+			color: #92A88A;
 
 	}
 
